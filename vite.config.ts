@@ -1,21 +1,24 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+// server.js
+const express = require('express');
+const path = require('path'); // Import the 'path' module
+const app = express();
+const port = process.env.PORT || 4000;
 
-// https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react()],
-  optimizeDeps: {
-    exclude: ['lucide-react'],
-  },
-  server: {
-    proxy: {
-      // Proxy requests with a '/api' prefix to your express server
-      '/api': {
-        target: 'http://localhost:4000', // The address of your express server
-        changeOrigin: true, // Recommended for virtual hosts
-        // Optional: rewrite path if you don't want the /api prefix passed on
-        // rewrite: (path) => path.replace(/^\/api/, ''), 
-      },
-    },
-  },
+// Your API endpoint
+app.get('/api/hello', (req, res) => {
+  res.send('Hello from the Express Server!');
+});
+
+// === This is the new part for production ===
+// Serve the static files from the Vite build directory
+app.use(express.static(path.join(__dirname, 'dist')));
+
+// For any other request, send the index.html file
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+});
+// ==========================================
+
+app.listen(port, () => {
+  console.log(`✅ Express server listening on port ${port}`);
 });
