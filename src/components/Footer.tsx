@@ -8,8 +8,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <div className="flex items-center mb-4">
-              <img src="/src/assets/company-logo.png" alt="Company Logo" className="h-16 w-auto" />
+            <div className="flex items-center mb-4 footer-company-logo">
             </div>
             <p className="text-gray-400">
               Leading name in solar energy and energy-efficient products since 2015.
@@ -41,7 +40,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-4">
               <li className="flex items-center">
-                <MapPin className="h-14 w-14 mr-2 text-blue-400" />
+                <MapPin className="h-6 w-6 mr-2 text-blue-400" />
                 <span className="text-gray-400">Raj Tower, Opp. Nirankari Satsang Bhawan, Haridwar Bypass Road, Dehradun-248001</span>
               </li>
               <li className="flex items-center">
