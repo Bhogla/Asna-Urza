@@ -5,9 +5,12 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: true,
-    port: process.env.PORT ? Number(process.env.PORT) : 5173,
+    const port = process.env.PORT || 4000 
   },
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
+  app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
 });
