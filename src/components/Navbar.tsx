@@ -30,7 +30,7 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
-              <img src="/src/assets/company-logo.jpg" alt="Company Logo" className="h-16 w-auto" />
+              <img src="https://ibb.co/vCcXn5kw" alt="Company Logo" className="h-16 w-auto" />
               <span className="ml-2 text-green-600 text-base sm:text-[30px] font-sans hidden sm:block">For Sustainable Tomorrow</span>
             </Link>
           </div>
