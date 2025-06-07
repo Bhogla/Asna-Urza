@@ -128,7 +128,7 @@ const Home = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-blue-900">METERING ARRANGEMENT</h3>
-                    <p className="text-gray-600">To measure how much power your premises use and electricity that the solar power system feeds to the grid</p>
+                    <p className="text-gray-600">To measure how much power your premises use and the electricity that the solar power system feeds to the grid</p>
                   </div>
                 </div>
               </div>
@@ -137,7 +137,7 @@ const Home = () => {
             <div className="relative">
               <div className="rounded-lg overflow-hidden">
                 <img 
-                  src="/src/assets/solar.png"
+                  src="https://i.ibb.co/Hfh38LPy/solar.jpg"
                   alt="Solar Panel Installation"
                   className="w-full h-auto"
                 />
