@@ -99,3 +99,11 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+.footer-company-logo {
+  background-image: url('./assets/company-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 200px;
+  height: 100px;
+}
