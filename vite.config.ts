@@ -13,7 +13,7 @@ export default defineConfig({
       '/api': {
         target: 'http://localhost:4000', // The address of your express server
         changeOrigin: true, // Recommended for virtual hosts
-        // Optional: rewrite path if you don't want the /api prefix passed on
+        // Optional: rewrite path if you don't want the /api prefix passed 
         // rewrite: (path) => path.replace(/^\/api/, ''), 
       },
     },
