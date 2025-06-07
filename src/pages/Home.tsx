@@ -55,27 +55,23 @@ const Home = () => {
           <div className="flex overflow-hidden relative w-full">
             <div className="flex animate-carousel space-x-8 py-4">
               {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17].map((num) => (
-                <img 
+                <div 
                   key={num}
-                  src={`/src/assets/companylogos/${num}${num === 4 ? '.jpg' : '.png'}`}
-                  alt={`Partner Logo ${num}`}
-                  className="h-20 w-auto object-contain min-w-[150px]"
+                  className={`h-20 w-auto object-contain min-w-[150px] company-logo-${num}`}
                 />
               ))}
             </div>
             <div className="flex animate-carousel space-x-8 py-4" aria-hidden="true">
               {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17].map((num) => (
-                <img 
+                <div 
                   key={`clone-${num}`}
-                  src={`/src/assets/companylogos/${num}${num === 4 ? '.jpg' : '.png'}`}
-                  alt={`Partner Logo ${num}`}
-                  className="h-20 w-auto object-contain min-w-[150px]"
+                  className={`h-20 w-auto object-contain min-w-[150px] company-logo-${num}`}
                 />
               ))}
             </div>
-          </div>
 
           <p className="text-gray-600 text-center mt-12 italic">1000+ Satisfied customers.... continuing</p>
+        </div>
         </div>
       </section>
 
