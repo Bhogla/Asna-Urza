@@ -30,7 +30,7 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
-              <img src="https://i.ibb.co/TDwW3Xtv/company-logo.png" alt="Company Logo" className="h-16 w-auto" />
+              <img src="/src/assets/company-logo.png" alt="Company Logo" className="h-16 w-auto" />
               <span className="ml-2 text-green-600 text-base sm:text-[30px] font-sans hidden sm:block">For Sustainable Tomorrow</span>
             </Link>
           </div>
@@ -59,11 +59,11 @@ const Navbar = () => {
         {isOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white">
-              <Link to="/" className="block px-3 py-2 text-gray-600 hover:text-blue-600">Home</Link>
-              <Link to="/products" className="block px-3 py-2 text-gray-600 hover:text-blue-600">Products</Link>
-              <Link to="/about" className="block px-3 py-2 text-gray-600 hover:text-blue-600">About</Link>
-              <Link to="/contact" className="block px-3 py-2 text-gray-600 hover:text-blue-600">Contact</Link>
-              <a href="tel:+911234567890" className="flex items-center px-3 py-2 text-blue-600">
+              <Link to="/" className="block px-3 py-2 text-gray-600 hover:text-blue-600" onClick={() => setIsOpen(false)}>Home</Link>
+              <Link to="/products" className="block px-3 py-2 text-gray-600 hover:text-blue-600" onClick={() => setIsOpen(false)}>Products</Link>
+              <Link to="/about" className="block px-3 py-2 text-gray-600 hover:text-blue-600" onClick={() => setIsOpen(false)}>About</Link>
+              <Link to="/contact" className="block px-3 py-2 text-gray-600 hover:text-blue-600" onClick={() => setIsOpen(false)}>Contact</Link>
+              <a href="tel:+911234567890" className="flex items-center px-3 py-2 text-blue-600" onClick={() => setIsOpen(false)}>
                 <Phone className="h-5 w-5 mr-2" />
                 <span>Call Us</span>
               </a>
