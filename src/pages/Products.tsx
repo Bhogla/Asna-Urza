@@ -60,11 +60,7 @@ const Products = () => {
             </ul>
           </div>
 
-          {/* Solar Powered Fencing */}
-          <div className="bg-gray-100 p-8 rounded-lg shadow-md">
-            <h3 className="text-2xl font-bold mb-4 flex items-center"><Shield className="mr-3" /> Solar Powered Fencing</h3>
-            <p>Protect your agricultural land, remote properties, and high-security zones with our effective solar-powered fencing solutions. This system provides a safe, non-lethal deterrent that operates 24/7 using clean energy.</p>
-          </div>
+
         </div>
       </section>
 
