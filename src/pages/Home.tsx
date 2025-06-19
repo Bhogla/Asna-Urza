@@ -146,14 +146,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="relative">
-              <div className="rounded-lg overflow-hidden">
-                <img 
-                  src="/src/assets/solar.png"
-                  alt="Solar Panel Installation"
-                  className="w-full h-auto"
-                />
-              </div>
+            <div className="relative rounded-lg overflow-hidden h-96 bg-cover bg-center" style={{ backgroundImage: `url('/src/assets/solar.png')` }}>
               <div className="absolute bottom-4 right-4 bg-yellow-400 text-blue-900 px-6 py-3 rounded-lg font-semibold">
                 <p className="text-lg">Sustainable Energy</p>
                 <p className="text-sm">For a Brighter Future</p>
