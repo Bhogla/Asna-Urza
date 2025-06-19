@@ -30,7 +30,7 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex flex-col items-center">
-              <img src="https://i.ibb.co/TDwW3Xtv/company-logo.png" alt="Company Logo" className="h-[65px] w-auto" />
+              <img src="https://i.ibb.co/jk1My4Jt/company-logo.png" alt="Company Logo" className="h-[65px] w-auto" />
               <p className="text-xs sm:text-sm" style={{ color: '#a3da3e' }}>For Sustainable Tomorrow</p>
             </Link>
           </div>
