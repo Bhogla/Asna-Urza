@@ -21,18 +21,19 @@ const Home = () => {
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="absolute inset-x-0 bottom-0 h-1/6 bg-gradient-to-t from-white to-transparent"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6" style={{ color: '#EAB441' }}>
             Powering a Sustainable Future with Solar Energy
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-2xl">
-            Leading provider of comprehensive solar energy solutions and energy-efficient products in India since 2015.
+            India’s leading provider of solar energy solutions and energy-efficient products since 2015
           </p>
           <div className="flex flex-wrap gap-4">
+
             <Link
-              to="/contact"
-              className="bg-[rgb(234,179,8)] hover:bg-yellow-600 text-white px-12 py-3 rounded-md font-semibold flex items-center"
+              to="/products"
+              className="bg-[#398bda] hover:bg-blue-700 text-white px-12 py-3 rounded-md font-semibold flex items-center"
             >
-              Get Started
+              Know More
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
             <Link
@@ -42,6 +43,17 @@ const Home = () => {
               Our Solutions
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Our Mission Section */}
+      <section className="bg-white py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold text-blue-900 text-center mb-4">Our Mission</h2>
+          <div className="w-24 h-1 bg-yellow-400 mx-auto mb-6"></div>
+          <p className="text-xl leading-relaxed mx-auto" style={{ maxWidth: '64rem' }}>
+            At the heart of our mission is a commitment to revolutionizing energy through powerful, affordable, and scalable solar solutions. We provide high-quality renewable energy products backed by expert project management, unwavering integrity, and dedicated customer support. More than just a supplier, we’re your trusted partner on the path to clean, limitless energy and true energy independence.
+          </p>
         </div>
       </section>
 
@@ -128,7 +140,7 @@ const Home = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-blue-900">METERING ARRANGEMENT</h3>
-                    <p className="text-gray-600">To measure how much power your premises use and the electricity that the solar power system feeds to the grid</p>
+                    <p className="text-gray-600">To measure how much power your premises use and electricity that the solar power system feeds to the grid</p>
                   </div>
                 </div>
               </div>
@@ -137,7 +149,7 @@ const Home = () => {
             <div className="relative">
               <div className="rounded-lg overflow-hidden">
                 <img 
-                  src="https://i.ibb.co/Hfh38LPy/solar.jpg"
+                  src="/src/assets/solar.png"
                   alt="Solar Panel Installation"
                   className="w-full h-auto"
                 />
