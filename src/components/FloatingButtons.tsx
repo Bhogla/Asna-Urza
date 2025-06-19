@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, MessageSquare } from 'lucide-react';
+import { Phone } from 'lucide-react';
 
 const FloatingButtons = () => {
   return (
@@ -21,7 +21,7 @@ const FloatingButtons = () => {
         className="fixed right-6 bottom-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all hover:scale-110"
         aria-label="Message us on WhatsApp"
       >
-        <MessageSquare className="h-6 w-6" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" className="h-6 w-6" />
       </a>
     </>
   );
