@@ -29,9 +29,9 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <Link to="/" className="flex flex-col items-center">
-              <img src="https://i.ibb.co/jk1My4Jt/company-logo.png" alt="Company Logo" className="h-[65px] w-auto" />
-              <p className="text-xs sm:text-sm" style={{ color: '#a3da3e' }}>For Sustainable Tomorrow</p>
+            <Link to="/" className="flex items-center">
+              <img src="https://i.ibb.co/jk1My4Jt/company-logo.png" alt="Company Logo" className="h-16 w-auto" />
+              <span className="ml-2 text-[32px] font-sans hidden sm:block" style={{ color: '#a3da3e' }}>(ISO Certified)</span>
             </Link>
           </div>
 
