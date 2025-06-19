@@ -31,7 +31,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
               <img src="https://i.ibb.co/jk1My4Jt/company-logo.png" alt="Company Logo" className="h-16 w-auto" />
-              <span className="ml-2 text-[32px] font-sans hidden sm:block" style={{ color: '#a3da3e' }}>(ISO Certified)</span>
+              <span className="ml-2 text-[32px] font-sans block" style={{ color: '#a3da3e' }}>ISO Certified</span>
             </Link>
           </div>
 
