@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { MapPin, Phone, Mail } from 'lucide-react';
+
 
 const Footer = () => {
   return (
@@ -40,15 +40,12 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-4">
               <li className="flex items-center">
-                <MapPin className="h-6 w-6 mr-2 text-blue-400" />
                 <span className="text-gray-400">Raj Tower, Opp. Nirankari Satsang Bhawan, Haridwar Bypass Road, Dehradun-248001</span>
               </li>
               <li className="flex items-center">
-                <Phone className="h-5 w-5 mr-2 text-blue-400" />
                 <a href="tel:+911234567890" className="text-gray-400 hover:text-white">+91 123 456 7890</a>
               </li>
               <li className="flex items-center">
-                <Mail className="h-5 w-5 mr-2 text-blue-400" />
                 <a href="mailto:info@aasnaurza.com" className="text-gray-400 hover:text-white">info@aasnaurza.com</a>
               </li>
             </ul>
